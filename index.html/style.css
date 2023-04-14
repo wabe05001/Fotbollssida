@@ -1,0 +1,56 @@
+body{
+    background-color:whitesmoke;
+}
+
+.wrapper{
+    display: grid;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    grid-template-areas:
+    "header"
+    "navbar"
+    "main"
+    "footer"
+
+}
+
+header{
+    grid-area: header;
+    text-align:center;
+
+}
+
+nav{
+    grid-area:navbar;
+}
+
+nav>ul{  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
+    margin: 0;
+    border-style:solid; 
+    border-color: rgb(161, 65, 65);  
+}
+
+nav li{
+    display: flex;
+    justify-content:space-evenly;
+    list-style-type: none;
+    margin:0;
+    padding: 1px;
+}
+
+li a{
+    display:block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration:none;
+
+}
+
+li a:hover{
+    
+}
