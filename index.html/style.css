@@ -1,5 +1,7 @@
 body{
-    background-color:whitesmoke;
+    background-color:grey;
+    margin:auto;
+
 }
 
 .wrapper{
@@ -18,11 +20,15 @@ body{
 header{
     grid-area: header;
     text-align:center;
+    color:white;
+    background-color:black;
 
 }
 
 nav{
     grid-area:navbar;
+    background-color:black;
+    
 }
 
 nav>ul{  
@@ -31,7 +37,8 @@ nav>ul{
     padding: 0;
     margin: 0;
     border-style:solid; 
-    border-color: rgb(161, 65, 65);  
+    border-color: rgb(61, 61, 61);  
+    color:white;
 }
 
 nav li{
@@ -40,13 +47,36 @@ nav li{
 
 li a{
     display:block;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 10px 10px;
     text-decoration:none;
 
 }
 
-li a:hover{
+#fifa{
+    width:auto;
+    hight:auto;
+
+}
+img{
+    padding:5px;
+    width:150px;
+    margin-right:100%;
+    border:solid;
+
+}
+
+main {
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+
+}
+
+
+h1 {
+    border-style:solid;
     
+
 }
