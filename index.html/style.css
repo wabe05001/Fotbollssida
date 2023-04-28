@@ -1,6 +1,6 @@
 body{
     background-color:grey;
-    margin:auto;
+    margin:0;
 
 }
 
@@ -17,6 +17,16 @@ body{
 
 }
 
+#mainindex{
+    display: grid;
+    grid-template-areas: 
+    "section figure andra"
+    
+    
+    
+    ;
+}
+
 header{
     grid-area: header;
     text-align:center;
@@ -27,7 +37,7 @@ header{
 
 nav{
     grid-area:navbar;
-    background-color:black;
+    background-color:rgb(0, 0, 0);
     
 }
 
@@ -37,7 +47,7 @@ nav>ul{
     padding: 0;
     margin: 0;
     border-style:solid; 
-    border-color: rgb(61, 61, 61);  
+    border-color: rgb(255, 254, 254);  
     color:white;
 }
 
@@ -54,14 +64,13 @@ li a{
 
 }
 
-#fifa{
-    width:auto;
-    hight:auto;
+#fifa main{
+    margin:0 7px;
 
 }
 img{
     padding:5px;
-    width:150px;
+    width: 100%;
     margin-right:100%;
     border:solid;
 
@@ -76,7 +85,13 @@ main {
 
 
 h1 {
-    border-style:solid;
+    
     
 
+}
+
+section {
+    text-align: left;
+    border:solid;
+    border-radius: 20px;
 }
