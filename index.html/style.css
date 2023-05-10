@@ -1,6 +1,6 @@
 body{
     background-color:grey;
-    margin:0;
+    margin: 0;
 
 }
 
@@ -26,7 +26,15 @@ main{
     "section";
 }
 
-#fifa{
+#sida2 main{
+    display: grid;
+    grid-template-areas: 
+    "h1 . ."
+    "section section section"
+    "figure figure figure"
+    ;
+}
+#sida3 main{
     display: grid;
     grid-template-areas: 
     "h1 . ."
@@ -35,6 +43,37 @@ main{
     ;
 }
 
+#sida4 main{
+    display: grid;
+    grid-template-areas: 
+    "h1 . ."
+    "section section section"
+    "figure figure figure"
+    ;
+}
+
+#sida5 main{
+    display: grid;
+    grid-template-areas: 
+    "h1 . ."
+    "section section section"
+    "figure figure figure"
+    ;
+}
+
+#sida6 main{
+    display: grid;
+    grid-template-areas: 
+    "h1 . ."
+    "section section section"
+    "figure figure figure"
+    ;
+}
+
+#sida7 main{
+    grid-template-columns:1fr 1fr;
+
+}
 header{
     grid-area: header;
     text-align:center;
@@ -42,6 +81,7 @@ header{
     background-color:black;
 
 }
+
 
 nav{
     grid-area:navbar;
@@ -79,7 +119,6 @@ li a{
 img{
     padding:5px;
     width: 100%;
-    margin-right:100%;
     border:solid;
 
 }
@@ -95,16 +134,59 @@ main {
     margin-bottom: 0;
     text-align: start;
 }
+#sida3 h2{
+    grid-column: 1/span 3;
+    margin-bottom: 0;
+    text-align: start;
+}
+
+#sida4 h2{
+    grid-column: 1/span 3;
+    margin-bottom: 0;
+    text-align: start;
+}
+
+#sida5 h2{
+    grid-column: 1/span 3;
+    margin-bottom: 0;
+    text-align: start;
+}
+
+#sida6 h2{
+    grid-column: 1/span 3;
+    margin-bottom: 0;
+    text-align: start;
+}
+
+#sida7 h2{
+    grid-column: 1/span 3;
+    margin-bottom: 0;
+    text-align: start;
+}
+
 
 #sida2 section{
     min-height:100px;
 
 }
 
-h1 {
-    
-    
+#sida3 section{
+    min-height:100px;
+}
 
+#sida4 section{
+    min-height:100px;
+}
+
+#sida5 section{
+    min-height:100px;
+}
+
+#sida6 section{
+    min-height:100px;
+}
+#sida7 section{
+    min-height:100px;
 }
 
 section {
