@@ -1,10 +1,10 @@
-body{
+body{ /* Layout för header, nav, main,footer, bakgrundsfärgen på alla sidor och margin: 0; att den täcker hela sidan  */
     background-color:grey;
     margin: 0;
 
 }
 
-.wrapper{
+.wrapper{ /*Inehåll som uprepas på varje sida*/
     display: grid;
     height: auto;
     padding: 0;
@@ -99,7 +99,7 @@ nav>ul{
     color:white;
 }
 
-nav li{
+nav li{ /*Stil till lista*/
     list-style-type: none;
 }
 
@@ -116,7 +116,7 @@ li a{
     margin:0 7px;
 
 }
-img{
+img{ /* sätter en standard för alla bilder på sida, display flex så att de får samma höjd och så att de passar. */
     padding:5px;
     width: 100%;
     border:solid;
@@ -129,7 +129,7 @@ main {
     text-align:center;
 }
 
-#sida2 h2{
+#sida2 h2{ 
     grid-column: 1/span 3;
     margin-bottom: 0;
     text-align: start;
@@ -230,8 +230,8 @@ tr:nth-child(even){
     background-color: gray
 }
 
-@media screen and (min-width: 600px) {
-    main {  
+@media screen and (min-width: 600px) { /* Responsivitet för NAVen */
+    main {   
       flex-direction: column;
     }
   }
