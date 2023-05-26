@@ -5,12 +5,12 @@ body{ /* Layout för header, nav, main,footer, bakgrundsfärgen på alla sidor o
 }
 
 .wrapper{ /*Inehåll som uprepas på varje sida*/
-    display: grid;
+    display: grid; /*Lägger till en grid*/
     height: auto;
-    padding: 0;
-    margin: 0;
-    grid-template-rows: 80px 50px auto 50px;
-    grid-template-areas:
+    padding: 0; /*gör så att utrymmet vid elementet är 0*/
+    margin: 0; /*Tar bort det oranga när man inpekterar hemsidan*/
+    grid-template-rows: 80px 50px auto 50px; /*Rader på kolumner*/
+    grid-template-areas: /*Lägger till grider*/
     "header"
     "navbar"
     "main"
@@ -21,7 +21,7 @@ body{ /* Layout för header, nav, main,footer, bakgrundsfärgen på alla sidor o
 main{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-column-gap: 10px;
+    grid-column-gap: 10px; /* lämar ett mellanrum efter varje grid kolumn*/
     grid-template-areas: 
     "section";
 }
@@ -75,32 +75,31 @@ main{
 
 }
 header{
-    grid-area: header;
-    text-align:center;
-    color:white;
-    background-color:black;
+    grid-area: header; /*visar vilken del av gridden du jobbar med*/
+    text-align:center; /*gör så att texten är i mitten*/
+    color:white; /* gör så att texten blir vit */
+    background-color:black; /*bakrundsfärgen*/
 
 }
 
 
 nav{
-    grid-area:navbar;
+    grid-area:navbar; 
     background-color:rgb(0, 0, 0);
     
 }
 
 nav>ul{  
     display: grid;
-    grid-template-columns: repeat(7, 1fr);/*1fr 1fr 1fr;*/
+    grid-template-columns: repeat(7, 1fr);/*att 1fr upprepas 7 gånger så du får 7 spalter;*/
     padding: 0;
     margin: 0;
-    border-style:solid; 
-    border-color: rgb(255, 254, 254);  
+    border-style:solid; /*gör så att bordern är solid*/
     color:white;
 }
 
 nav li{ /*Stil till lista*/
-    list-style-type: none;
+    list-style-type: none; 
 }
 
 li a{
@@ -202,6 +201,7 @@ section {
     border-radius: 20px;
 }
 
+
 table {
     border-spacing: 0px; /*gör så att det inte finns mellanrum mellan kolumnerna*/
     width:100%;
@@ -228,6 +228,14 @@ tr:nth-child(odd){
 
 tr:nth-child(even){
     background-color: gray
+}
+
+iframe{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    width: 560px;
+    height: 315px;
 }
 
 @media screen and (min-width: 600px) { /* Responsivitet för NAVen */
