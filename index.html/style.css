@@ -184,11 +184,11 @@ main {
 #sida6 section{
     min-height:100px;
 }
-#sida7 section{
-    min-height:100px;
+#sida7 section{ 
+    min-height:100px;/*visar den minsta höjden för min section */
 }
 
-#sida7 img{
+#sida7 img{ /*sätter standard för alla bilder på sida7*/
     width: 100%;
     border: 0;
     margin:0;
@@ -215,15 +215,12 @@ td:nth-child(2), td:nth-child(3){
     text-align: center; /*gör så att texten i den aandra och tredje raden kolumner är centrerade*/
 }
 
-td:nth-child(4), th:nth-child(4){
-   text-align: right;
-}
-thead > tr:nth-child(1){
-   background-color: blue
+td:nth-child(4), th:nth-child(4){ /*gör så att texten i den 4 raden kolumner är åt höger*/
+   text-align: right; 
 }
 
 tr:nth-child(odd){
-    background-color: red
+    background-color: red 
 }
 
 tr:nth-child(even){
