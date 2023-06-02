@@ -26,7 +26,7 @@ main{
     "section";
 }
 
-#sida2 main{
+#premierleague main{
     display: grid;
     grid-template-areas: 
     "h1 . ."
@@ -34,16 +34,7 @@ main{
     "figure figure figure"
     ;
 }
-#sida3 main{
-    display: grid;
-    grid-template-areas: 
-    "h1 . ."
-    "section section section"
-    "figure figure figure"
-    ;
-}
-
-#sida4 main{
+#laliga main{
     display: grid;
     grid-template-areas: 
     "h1 . ."
@@ -52,7 +43,7 @@ main{
     ;
 }
 
-#sida5 main{
+#seriea main{
     display: grid;
     grid-template-areas: 
     "h1 . ."
@@ -61,7 +52,7 @@ main{
     ;
 }
 
-#sida6 main{
+#bundesliga main{
     display: grid;
     grid-template-areas: 
     "h1 . ."
@@ -70,7 +61,16 @@ main{
     ;
 }
 
-#sida7 main{
+#ligue1 main{
+    display: grid;
+    grid-template-areas: 
+    "h1 . ."
+    "section section section"
+    "figure figure figure"
+    ;
+}
+
+#barcelona main{
     grid-template-columns:1fr 1fr;
 
 }
@@ -128,67 +128,67 @@ main {
     text-align:center;
 }
 
-#sida2 h2{ 
+#premierleague h2{ /*stil för rubrik 2*/
     grid-column: 1/span 3;
     margin-bottom: 0;
     text-align: start;
 }
-#sida3 h2{
-    grid-column: 1/span 3;
-    margin-bottom: 0;
-    text-align: start;
-}
-
-#sida4 h2{
+#laliga h2{
     grid-column: 1/span 3;
     margin-bottom: 0;
     text-align: start;
 }
 
-#sida5 h2{
+#seriea h2{
     grid-column: 1/span 3;
     margin-bottom: 0;
     text-align: start;
 }
 
-#sida6 h2{
+#bundesliga h2{
     grid-column: 1/span 3;
     margin-bottom: 0;
     text-align: start;
 }
 
-#sida7 h2{
+#ligue1 h2{
+    grid-column: 1/span 3;
+    margin-bottom: 0;
+    text-align: start;
+}
+
+#barcelona h2{
     grid-column: 1/span 3;
     margin-bottom: 0;
     text-align: start;
 }
 
 
-#sida2 section{
+#premierleague section{ /*stil för section*/
     min-height:100px;
 
 }
 
-#sida3 section{
+#laliga section{
     min-height:100px;
 }
 
-#sida4 section{
+#seriea section{
     min-height:100px;
 }
 
-#sida5 section{
+#bundesliga section{
     min-height:100px;
 }
 
-#sida6 section{
+#ligue1 section{
     min-height:100px;
 }
-#sida7 section{ 
+#barcelona section{ 
     min-height:100px;/*visar den minsta höjden för min section */
 }
 
-#sida7 img{ /*sätter standard för alla bilder på sida7*/
+#barcelona img{ /*sätter standard för alla bilder på sida7*/
     width: 100%;
     border: 0;
     margin:0;
@@ -220,19 +220,42 @@ td:nth-child(4), th:nth-child(4){ /*gör så att texten i den 4 raden kolumner �
 }
 
 tr:nth-child(odd){
-    background-color: red 
+    background-color: #FF0000;
 }
 
 tr:nth-child(even){
-    background-color: gray
+    background-color: gray;
 }
 
-iframe{
+video{
     display: block;
     margin: 0 auto;
     margin-bottom: 2%;
     width: 560px;
     height: 315px;
+}
+a:link{ /*LoVe Focus HAte*/
+    color: navy;
+}
+
+a:visited{ /*LoVe Focus HAte*/
+    color:blueviolet;
+}
+
+a:focus{ /*LoVe Focus HAte*/
+    color: rgb(255,0,0);
+}
+
+a:hover{/*LoVe Focus HAte*/
+    color: #0000ff;
+}
+
+a:active{ /*LoVe Focus HAte*/
+    color:green;
+}
+
+footer{ /*egenskap för footer-element*/
+    margin-top: 1em;
 }
 
 @media screen and (min-width: 600px) { /* Responsivitet för NAVen */

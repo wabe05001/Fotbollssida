@@ -17,12 +17,12 @@
         <nav> <!-- Navigerings menyn -->
             <ul> <!-- oordnad lista, barn till nav  -->
                 <li><a href="index.html"> Home </a></li>  <!-- länk till de olika sidorna -->
-                <li><a href="sida2.html"> Premier League </a></li>
-                <li><a href="sida3.html"> La-liga</a></li>
-                <li><a href="sida4.html"> Serie-A</a></li>
-                <li><a href="sida5.html"> Bundesliga</a></li>
-                <li><a href="sida6.html"> Ligue1</a></li>
-                <li><a href="sida7.html"> FCB</a></li>
+                <li><a href="PremierLeague.html"> Premier League </a></li>
+                <li><a href="LaLiga.html"> La-liga</a></li>
+                <li><a href="SerieA.html"> Serie-A</a></li>
+                <li><a href="Bundesliga.html"> Bundesliga</a></li>
+                <li><a href="Ligue1.html"> Ligue1</a></li>
+                <li><a href="Barcelona.html"> FCB</a></li>
             </ul>
         </nav>
         <main> <!-- Huvuddelen av dokumentet  -->
@@ -36,8 +36,8 @@
             </section>
             <section class="mitten">
                 <figure>  <!-- annat sätt att lägga in bilder, mycket bra sett för just denna sidan  -->
-                    <img src="https://www.si.com/.image/t_share/MTk1MDQwMzQzMTEwOTg0OTAz/imago0028435768h.jpg"> <!-- bild samt vad jag kallar den -->
-                    <img src="https://www.mancity.com/meta/media/pxwd1nnt/li206578.png?width=1620">
+                    <img src="https://www.si.com/.image/t_share/MTk1MDQwMzQzMTEwOTg0OTAz/imago0028435768h.jpg" alt="leomessi"> <!-- bild samt vad jag kallar den -->
+                    <img src="https://www.mancity.com/meta/media/pxwd1nnt/li206578.png?width=1620" alt="football stadium">
                 </figure>
             </section>
             <section class = "andra"> 
@@ -81,12 +81,46 @@
 
 
                 </table>
-                <form action="action.php" method="post"> <!-- formuläret och dess metoder  --> 
-                        <label for="team"> Write your favorite team </label><br> <!-- Rubrik till formulär cellen --> 
-                        <input type="text" name="Lag" id="team"><br> <!-- Formulär cellen -->
-                        <button type="submit" onclick="alert('Thank you for submiting your favorite team')">submit</button> <!-- Skicka knappen  -->
-
-                    </form>
+                <form action="#" method="post">
+                    <label for="Name">Namn: </label>
+                    <input type="text" name="Name" id="Name">
+    
+                    <label for="Lastname">Efternamn: </label>
+                    <input type="text" name="Lastname" id="Lastname">
+    
+                    <label for="Age">Ålder: </label>
+                    <input type="number" name="Age" id="Age">
+    
+                    <label for="Height">Höjd (cm): </label>
+                    <input type="number" name="Height" id="Height">
+    
+                    <p>Vilka tävlingar har din favorit spelare  vunnit?</p>
+                    <p></p>
+    
+                    <label for="WBP">Worlds best player:</label>
+                    <input type="checkbox" name="WBP" value="WBP">
+    
+                    <label for="LM">LEO MESSI</label>
+                    <input type="checkbox" name="LM" id="LM" value="LM">
+    
+                    <label for="Textarea">Beskrivning: </label>
+                    <textarea name="Textarea" id="Textarea" cols="30" rows="8"></textarea>
+    
+                    <label for="ARGENTINSK">Argentinsk: </label>
+                    <input type="radio" name="Nationality" id="ARGENTINSK" value="ARGENTINSK">
+    
+                    <label for="Spansk">Spansk: </label>
+                    <input type="radio" name="Nationality" id="Spansk" value="Spansk">
+    
+                    <label for="ANNAT">Annat: </label>
+                    <input type="radio" name="ANNAT" id="ANNAT" value="ANNAT">
+    
+                    <label for="Password">Lösenord: </label>
+                    <input type="password" name="Password" id="Password">
+    
+                    <br>
+                    <input type="submit" name="submit">
+    
             </section><!--sluttaggar-->
 
 
